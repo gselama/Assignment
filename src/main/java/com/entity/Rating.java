@@ -21,7 +21,7 @@ public class Rating {
     @Column(name = "UPDATED_ON")
     private final Long updated_on;
 
-    @OneToMany(mappedBy="rating")
+    @OneToMany(mappedBy = "rating")
     private Set<Movie> movies;
 
     public Rating(Integer userId, Integer movieId, Double rating, Long updated_on) {

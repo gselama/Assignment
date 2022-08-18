@@ -9,6 +9,11 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/*
+ * MoviePipeline class is the maser pipeline
+ * Contains the pipeline function for Movie,Tag,Link,Rating etc..
+ */
 @Component
 public class MoviePipeline {
 
@@ -26,6 +31,9 @@ public class MoviePipeline {
 
     BufferedReader csvReader;
 
+    /*
+     * Pipeline for Movies
+     */
     public String loadMovies(MovieRepository repository) {
 
         try {
@@ -64,7 +72,9 @@ public class MoviePipeline {
         }
     }
 
-    public String loadRatings(RatingRepository repository) {
+    /*
+     * Pipeline for Ratings
+     */public String loadRatings(RatingRepository repository) {
 
         try {
             csvReader = new BufferedReader(new FileReader(pathToCsv + ratingFileName));
@@ -98,6 +108,10 @@ public class MoviePipeline {
 
     }
 
+
+    /*
+     * Pipeline for Tags
+     */
     public String loadTags(TagRepository repository) {
 
         try {
@@ -132,6 +146,9 @@ public class MoviePipeline {
 
     }
 
+    /*
+     * Pipeline for Links
+     */
     public String loadLinks(LinkRepository repository) {
 
         try {
@@ -166,6 +183,9 @@ public class MoviePipeline {
 
     }
 
+    /*
+     * Pipeline for GenomeTags
+     */
     public String loadGenomeTags(GenomeTagRepository repository) {
 
         try {
@@ -200,6 +220,9 @@ public class MoviePipeline {
 
     }
 
+    /*
+     * Pipeline for GenomeScores
+     */
     public String loadGnomeScores(GenomeScoreRepository repository) {
 
         try {

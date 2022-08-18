@@ -1,5 +1,14 @@
 package com.Bean;
 
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
+
+
+/*
+ * StatusBean shares the status of data pipeline
+ */
+@Component
 public class StatusBean {
 
     private String movieLoadStatus;
