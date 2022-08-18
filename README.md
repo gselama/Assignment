@@ -10,6 +10,19 @@ It contains a data pipeline to load all the required information.
 
 Use the pom.xml to download all the required libraries for this project.
 
+## Data structure
+
+SnowFlake scheme is used to structure the data after cleaning it. The detailed ER diagram is available in the folder /ER.
+
+Since there was a necessity to create multi level DIMENSION Tables away from FACT Table.
+
+https://en.wikipedia.org/wiki/Snowflake_schema
+
+
+In the real world, Apache Spark would be a suitable approach in processing these huge datasets.
+Since it has the benefits of both real-time and batch processing the data.
+
+
 ## Swagger
 
 ```
